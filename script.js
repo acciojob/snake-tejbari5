@@ -22,14 +22,11 @@ const createGameBoardPixels = () => {
 };
 
 
-// This variable always holds the updated array of game pixels created by createGameBoardPixels() :
 const gameBoardPixels = document.getElementsByClassName("gameBoardPixel");
 
 
-/// THE FOOD:
 let currentFoodPostion = 0;
 const createFood = () => {
- // Remove previous food;
  gameBoardPixels[currentFoodPostion].classList.remove("food");
 
 
